@@ -1,0 +1,13 @@
+ion-content {
+  --background: transparent;
+}
+
+ion-card {
+  margin-top: 10vh;
+  --ion-item-background: var(--ion-color-light);
+}
+ion-button div {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}

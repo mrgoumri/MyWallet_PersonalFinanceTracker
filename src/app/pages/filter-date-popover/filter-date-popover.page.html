@@ -1,0 +1,19 @@
+<ion-list>
+  <ion-item button (click)="getAll()">
+    <ion-icon name="apps" slot="start"></ion-icon>
+    All
+  </ion-item>
+  <ion-item>
+    <ion-label>Start Date</ion-label>
+    <ion-datetime picker-format="DD MM YYYY" [(ngModel)]="start_date" placeholder="Select Date"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>End Date</ion-label>
+    <ion-datetime picker-format="DD MM YYYY" [(ngModel)]="end_date" placeholder="Select Date"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-button style="width:100%;" fill="outline" shape="round" expand="block" color="primary" (click)="search()">
+      <ion-icon name="search" slot="icon-only"></ion-icon>
+    </ion-button>
+  </ion-item>
+</ion-list>
